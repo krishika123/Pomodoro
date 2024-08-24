@@ -1,0 +1,68 @@
+/* Basic reset to remove default margins and paddings */
+body, h1, p, div, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style for the main heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Timer display styling */
+#timer {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+/* Button container styles */
+div {
+    margin: 10px 0;
+}
+
+/* Style for the buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Individual button styles */
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#pauseBtn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Spotify controls and mini-games sections */
+#spotifyControls, #miniGames {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
