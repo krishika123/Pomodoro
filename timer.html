@@ -1,0 +1,24 @@
+<div id="timerSection">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">25:00</div>
+    <div>
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <!-- Settings Modal -->
+    <div id="settingsModal" style="display:none;">
+        <h2>Settings</h2>
+        <label for="pomodoroLength">Pomodoro Length (minutes):</label>
+        <input type="number" id="pomodoroLength" value="25" />
+        <br/>
+        <label for="shortBreakLength">Short Break Length (minutes):</label>
+        <input type="number" id="shortBreakLength" value="5" />
+        <br/>
+        <label for="longBreakLength">Long Break Length (minutes):</label>
+        <input type="number" id="longBreakLength" value="15" />
+        <br/>
+        <button id="saveSettings">Save</button>
+        <button id="closeSettings">Close</button>
+    </div>
+</div>

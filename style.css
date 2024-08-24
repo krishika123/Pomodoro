@@ -1,21 +1,60 @@
-/* Basic reset to remove default margins and paddings */
-body, h1, p, div, button {
+/* Ensure the body takes up the full screen width and height */
+body, html {
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    font-family: Arial, sans-serif;
 }
 
-/* Set up basic body styles */
+/* Main container to split the page into two equal halves */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row; /* Ensure the children are laid out horizontally */
+}
+
+/* Left side (Timer section) */
+#leftSide {
+    flex: 1;
+    background-color: #f4f4f4; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Right side (Spotify and Game sections) */
+#rightSide {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    background-color: #e9ecef; /* Example background color */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
+
+/* Spotify Controls */
+#spotifyContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Example divider between sections */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Mini-Games section */
+#miniGamesContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+
 
 /* Style for the main heading */
 h1 {
